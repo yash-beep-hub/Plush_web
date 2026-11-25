@@ -1,0 +1,6 @@
+{
+  "name": "PulseWeb",
+  "description": "Background auto-refresh Android browser that keeps logged-in webpages actively reloading via an invisible 0x0 overlay host and foreground service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

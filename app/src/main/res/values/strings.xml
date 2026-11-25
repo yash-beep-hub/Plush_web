@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">PulseWeb</string>
+
+    <!-- Top Control Bar -->
+    <string name="url_input_placeholder">Enter URL (auto https://)</string>
+    <string name="url_input_cd">Website URL input</string>
+    <string name="go_button_cd">Load website</string>
+    <string name="clear_url_cd">Clear URL</string>
+    <string name="interval_label">Sec</string>
+    <string name="interval_input_cd">Auto-refresh interval in seconds</string>
+    <string name="start_auto_refresh">Start</string>
+    <string name="stop_auto_refresh">Stop</string>
+    <string name="start_auto_refresh_cd">Start background auto-refresh</string>
+    <string name="stop_auto_refresh_cd">Stop background auto-refresh</string>
+
+    <!-- Setup & Permissions Banner -->
+    <string name="setup_banner_title">Background Engine Setup</string>
+    <string name="setup_banner_subtitle">Grant permissions to keep Chromium rendering alive at 0x0 in background</string>
+    <string name="setup_ready_badge">Engine Ready</string>
+    <string name="setup_action_needed_badge">%1$d Setup Needed</string>
+    <string name="setup_dismiss_cd">Collapse setup banner</string>
+    <string name="setup_expand_cd">Show background permissions setup</string>
+
+    <string name="perm_notifications_title">Notifications</string>
+    <string name="perm_notifications_desc">Required for foreground service status &amp; Stop action</string>
+    <string name="perm_overlay_title">Invisible 0x0 Host</string>
+    <string name="perm_overlay_desc">Display over other apps keeps WebView JS timers active</string>
+    <string name="perm_battery_title">Battery Unrestricted</string>
+    <string name="perm_battery_desc">Prevents Doze mode from pausing reload countdowns</string>
+
+    <string name="status_granted">Granted</string>
+    <string name="status_allow">Allow</string>
+    <string name="status_unrestricted">Unrestricted</string>
+    <string name="status_configure">Settings</string>
+
+    <!-- Bottom Telemetry & Browser Controls -->
+    <string name="nav_back_cd">Navigate back</string>
+    <string name="nav_forward_cd">Navigate forward</string>
+    <string name="nav_reload_cd">Reload webpage now</string>
+    <string name="nav_stop_load_cd">Stop loading webpage</string>
+    <string name="nav_diagnostics_cd">Open session telemetry and setup</string>
+    <string name="telemetry_idle">Standby • Chrome UA • 3P Cookies On</string>
+    <string name="telemetry_active_format">Next %1$ds • #%2$d</string>
+
+    <!-- Empty State -->
+    <string name="empty_state_eyebrow">ZERO-WINDOW BACKGROUND ENGINE</string>
+    <string name="empty_state_title">Keep any logged-in session alive in the background</string>
+    <string name="empty_state_body">Sign in normally here, set your reload cadence, then minimize the app. PulseWeb silently moves your live session into a 0x0 non-touchable host with CPU wake lock.</string>
+    <string name="empty_state_quick_launch">QUICK TEST TARGETS</string>
+    <string name="empty_state_illustration_cd">PulseWeb orbital background telemetry illustration</string>
+
+    <!-- Diagnostics Sheet -->
+    <string name="diagnostics_title">Background Session Telemetry</string>
+    <string name="diagnostics_host_mode">WebView Host</string>
+    <string name="diagnostics_host_foreground">In-App UI</string>
+    <string name="diagnostics_host_overlay">0x0 Invisible Overlay</string>
+    <string name="diagnostics_host_detached">Memory Only (No Overlay)</string>
+    <string name="diagnostics_wake_lock">CPU Wake Lock</string>
+    <string name="diagnostics_wake_lock_held">PARTIAL_WAKE_LOCK Active</string>
+    <string name="diagnostics_wake_lock_released">Released</string>
+    <string name="diagnostics_refreshes">Total Refreshes</string>
+    <string name="diagnostics_user_agent">Chrome Mobile UA &amp; 3rd-Party Cookies Enabled</string>
+    <string name="diagnostics_activity_log">RECENT ENGINE EVENTS</string>
+    <string name="diagnostics_log_empty">No refresh events recorded yet. Load a page and tap Start to test background reloads.</string>
+    <string name="diagnostics_open_battery">Battery Settings</string>
+    <string name="diagnostics_open_overlay">Overlay Settings</string>
+    <string name="diagnostics_reset_count">Reset Counter</string>
+
+    <!-- Foreground Service Notification -->
+    <string name="notif_channel_name">Background Auto-Refresh</string>
+    <string name="notif_channel_desc">Shows active URL, refresh count, and controls while PulseWeb reloads pages in the background</string>
+    <string name="notif_title_background">PulseWeb • 0x0 Background Active</string>
+    <string name="notif_title_foreground">PulseWeb • Auto-Refresh Active</string>
+    <string name="notif_title_no_overlay">PulseWeb • Background (Grant Overlay)</string>
+    <string name="notif_action_stop">Stop</string>
+    <string name="notif_action_reload">Reload Now</string>
+    <string name="notif_summary_format">Refreshes: %1$d • Next in %2$ds • %3$s</string>
+    <string name="notif_expanded_format">URL: %1$s\nRefreshes: %2$d (every %3$ds) • Next in %4$ds\nHost: %5$s</string>
+
+    <!-- Validation & Feedback -->
+    <string name="error_empty_url">Enter a webpage URL before starting auto-refresh.</string>
+    <string name="error_invalid_interval">Interval must be at least 1 second.</string>
+    <string name="overlay_missing_hint">Overlay permission not granted yet — Chromium JS timers may throttle when minimized.</string>
+</resources>
